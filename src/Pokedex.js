@@ -14,7 +14,11 @@ function Pokedex({ pokemons = defaultArrayPokemons }) {
   return (
     <div className="pokedex">
       {pokemons.map((p) => {
-        return <Pokecard pokemon={p} />;
+        return (
+          <div key={p.id}>
+            <Pokecard pokemon={p} />
+          </div>
+        );
       })}
     </div>
   );
