@@ -11,8 +11,13 @@ const defaultArrayPokemons = [
   { id: 133, name: "Eevee", type: "normal", base_experience: 65 },
 ];
 function Pokedex({ pokemons = defaultArrayPokemons }) {
-  console.log("Entering Pokedex");
-  return pokemons.map((p) => <Pokecard pokemon={p} />);
+  return (
+    <div className="pokedex">
+      {pokemons.map((p) => {
+        return <Pokecard pokemon={p} />;
+      })}
+    </div>
+  );
 }
 
 export default Pokedex;

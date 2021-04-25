@@ -5,10 +5,10 @@ function Pokecard(props) {
   const { id, name, type, base_experience } = props.pokemon;
   console.log(id, name, type, base_experience);
   return (
-    <div class="poke-card">
+    <div className="poke-card">
       <h4>{name}</h4>
       <img
-        class="poke-card-img"
+        className="poke-card-img"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
         alt="pokemon"
       />
