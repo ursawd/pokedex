@@ -1,0 +1,19 @@
+.poke-card {
+  width: 200px;
+  border: 2px solid lightgray;
+  margin: 20px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+.poke-card-img {
+  height: 125px;
+  width: 125px;
+}
+p {
+  padding: 0px;
+  margin: 5px;
+}
+h4 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
