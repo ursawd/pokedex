@@ -10,18 +10,21 @@ const defaultArrayPokemons = [
   { id: 94, name: "Gengar", type: "poison", base_experience: 225 },
   { id: 133, name: "Eevee", type: "normal", base_experience: 65 },
 ];
-function Pokedex({ pokemons = defaultArrayPokemons }) {
-  return (
-    <div className="pokedex">
-      {pokemons.map((p) => {
-        return (
-          <div key={p.id}>
-            <Pokecard pokemon={p} />
-          </div>
-        );
-      })}
-    </div>
-  );
+function Pokedex(props) {
+  // function Pokedex({ pokemons = defaultArrayPokemons }) {
+  console.log("Pokedex Props", props);
+  return null;
+  // return (
+  //   <div className="pokedex">
+  //     {pokemons.map((p) => {
+  //       return (
+  //         <div key={p.id}>
+  //           <Pokecard pokemon={p} />
+  //         </div>
+  //       );
+  //     })}
+  //   </div>
+  // );
 }
 
 export default Pokedex;
