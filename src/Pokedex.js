@@ -1,7 +1,7 @@
 import Pokecard from "./Pokecard";
 import "./Pokedex.css";
 //----------------------------------------------------------------
-function Pokedex({ pokemons }) {
+function Pokedex({ pokemons, isWinner }) {
   return (
     <div className="pokedex">
       {pokemons.map((p) => {
